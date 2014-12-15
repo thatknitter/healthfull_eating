@@ -46,7 +46,7 @@ h3 {
   text-align: center;
 }
 
-.home-tab{
+.home-tab {
   width: 10%;
   height: 35px;
   margin-top: 40px;
@@ -69,6 +69,12 @@ h3 {
   box-shadow: inset 5px 5px 5px #b2afaf;
   text-decoration: none;
 }
+
+.home-tab:hover {
+  height: 45px;
+  margin-top: 30px;
+}
+
 .food-tab {
   width: 10%;
   height: 50px;
@@ -93,6 +99,12 @@ h3 {
   box-shadow: inset 5px 5px 5px #b2afaf;
   text-decoration: none;
 }
+
+.food-tab:hover {
+  height: 60px;
+  margin-top: -70px;
+}
+
 .cooking-tab {
   width: 10%;
   height: 50px;
@@ -116,6 +128,11 @@ h3 {
   -webkit-box-shadow: 5px 5px 5px #b2afaf;
   box-shadow: inset 5px 5px 5px #b2afaf;
   text-decoration: none;
+}
+
+.cooking-tab:hover {
+  height: 60px;
+  margin-top: -70px;
 }
 
 .nutrition-tab {
@@ -143,6 +160,11 @@ h3 {
   text-decoration: none;
 }
 
+.nutrition-tab:hover {
+  height: 60px;
+  margin-top: -70px;
+}
+
 .recipe-tab {
   width: 10%;
   height: 35px;
@@ -166,6 +188,11 @@ h3 {
   -webkit-box-shadow: 5px 5px 5px #b2afaf;
   box-shadow: inset 5px 5px 5px #b2afaf;
   text-decoration: none;
+}
+
+.recipe-tab:hover {
+  height: 45px;
+  margin-top: -70px;
 }
 
 .gizmo-tab {
@@ -193,6 +220,11 @@ h3 {
   text-decoration: none;
 }
 
+.gizmo-tab:hover {
+  height: 60px;
+  margin-top: -70px;
+}
+
 .pantry-tab {
   width: 10%;
   height: 48px;
@@ -216,6 +248,11 @@ h3 {
   -webkit-box-shadow: 5px 5px 5px #b2afaf;
   box-shadow: inset 5px 5px 5px #b2afaf;
   text-decoration: none;
+}
+
+.pantry-tab:hover {
+  height: 58px;
+  margin-top: -70px;
 }
 
 .org-tab {
@@ -243,6 +280,11 @@ h3 {
   text-decoration: none;
 }
 
+.org-tab:hover {
+  height: 58px;
+  margin-top: -70px;
+}
+
 .forums-tab {
   width: 10%;
   height: 50px;
@@ -266,6 +308,11 @@ h3 {
   -webkit-box-shadow: 5px 5px 5px #b2afaf;
   box-shadow: inset 5px 5px 5px #b2afaf;
   text-decoration: none;
+}
+
+.forums-tab:hover {
+  height: 60px;
+  margin-top: -70px;
 }
 
 .mystuff-tab {
@@ -293,6 +340,11 @@ h3 {
   text-decoration: none;
 }
 
+.mystuff-tab:hover {
+  height: 45px;
+  margin-top: -70px;
+}
+
 .footerbar {
   width: 100%;
   height: 41px;
@@ -318,7 +370,7 @@ h3 {
   margin-top: -94px;
   margin-bottom: 20px;
   margin-left: 83%;
-  }
+}
 a.foot {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
@@ -328,8 +380,8 @@ a.foot {
   padding: .2em 1em;
 }
 /*a.foot:visited {
-  color: #91B428;
-}*/
+ color: #91B428;
+ }*/
 ul.foot-links {
   margin: 0;
   padding: 0;
