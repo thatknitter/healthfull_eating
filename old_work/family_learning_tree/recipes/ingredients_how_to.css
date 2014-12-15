@@ -1,0 +1,26 @@
+body {
+	width: 500px;
+	background-color: white;
+}
+.head {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #960066;
+	font-size: 20pt;
+	letter-spacing: 1px;
+	text-align: center;
+}
+p.head-para {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	font-size: 12pt;
+}
+.category {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #91B428;
+	font-size: 15pt;
+	letter-spacing: 1px;
+}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}

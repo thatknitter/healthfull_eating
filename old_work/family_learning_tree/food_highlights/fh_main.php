@@ -1,0 +1,370 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<style type="text/css">
+			.food-tab {
+				background: -moz-linear-gradient(left, rgba(150,0,102,1) 0%, rgba(150,0,102,0.8) 50%, rgba(150,0,102,0.8) 51%, rgba(150,0,102,0.59) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(150,0,102,1)), color-stop(50%,rgba(150,0,102,0.8)), color-stop(51%,rgba(150,0,102,0.8)), color-stop(100%,rgba(150,0,102,0.59))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(left, rgba(150,0,102,1) 0%,rgba(150,0,102,0.8) 50%,rgba(150,0,102,0.8) 51%,rgba(150,0,102,0.59) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(left, rgba(150,0,102,1) 0%,rgba(150,0,102,0.8) 50%,rgba(150,0,102,0.8) 51%,rgba(150,0,102,0.59) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(left, rgba(150,0,102,1) 0%,rgba(150,0,102,0.8) 50%,rgba(150,0,102,0.8) 51%,rgba(150,0,102,0.59) 100%); /* IE10+ */
+				background: linear-gradient(to right, rgba(150,0,102,1) 0%,rgba(150,0,102,0.8) 50%,rgba(150,0,102,0.8) 51%,rgba(150,0,102,0.59) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#960066', endColorstr='#96960066',GradientType=1 ); /* IE6-9 */
+				-moz-box-shadow: 5px 5px 5px #B75D99;
+				-webkit-box-shadow: 5px 5px 5px #B75D99;
+				box-shadow: inset 5px 5px 5px #B75D99;
+				height: 60px;
+				margin-top: -80px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.food-tab:hover {
+				background: -moz-linear-gradient(left, rgba(150,0,102,1) 0%, rgba(150,0,102,0.8) 50%, rgba(150,0,102,0.8) 51%, rgba(150,0,102,0.59) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(150,0,102,1)), color-stop(50%,rgba(150,0,102,0.8)), color-stop(51%,rgba(150,0,102,0.8)), color-stop(100%,rgba(150,0,102,0.59))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(left, rgba(150,0,102,1) 0%,rgba(150,0,102,0.8) 50%,rgba(150,0,102,0.8) 51%,rgba(150,0,102,0.59) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(left, rgba(150,0,102,1) 0%,rgba(150,0,102,0.8) 50%,rgba(150,0,102,0.8) 51%,rgba(150,0,102,0.59) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(left, rgba(150,0,102,1) 0%,rgba(150,0,102,0.8) 50%,rgba(150,0,102,0.8) 51%,rgba(150,0,102,0.59) 100%); /* IE10+ */
+				background: linear-gradient(to right, rgba(150,0,102,1) 0%,rgba(150,0,102,0.8) 50%,rgba(150,0,102,0.8) 51%,rgba(150,0,102,0.59) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#960066', endColorstr='#96960066',GradientType=1 ); /* IE6-9 */
+				-moz-box-shadow: 5px 5px 5px #B75D99;
+				-webkit-box-shadow: 5px 5px 5px #B75D99;
+				box-shadow: inset 5px 5px 5px #B75D99;
+				height: 60px;
+				margin-top: -80px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.title-bar {
+				width: 898.8px;
+				height: 31px;
+				font-family: Arial, Helvetica, sans-serif;
+				color: #FFFFFF;
+				background-color: #960066;
+				margin-left: 302px;
+				margin-top: 10px;
+				text-align: center;
+				padding-top: 5px;
+				font-size: 18pt;
+				letter-spacing: 2px;
+				-moz-box-shadow: 5px 3px 5px #B75D99, -3px -3px 5px #333333;
+				-webkit-box-shadow: 5px 3px 5px #B75D99, -3px -3px 5px #333333;
+				box-shadow: inset 5px 3px 5px #B75D99, inset -3px -3px 5px #333333;
+			}
+			.description-box {
+				width: 882px;
+				height: 300px;
+				border-style: solid;
+				border-width: 1pt;
+				margin-left: 302.4px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 15pt;
+				padding-left: 8px;
+				padding-right: 5px;
+			}
+			#vegetables-icon {
+				width: 225px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14pt;
+				color: #333333;
+				margin-left: 302.4px;
+				border-style: solid;
+				border-color: #91B428;
+				border-width: 1pt;
+				margin-top: 30px;
+				padding: 10px;
+			}
+			#fruits-icon {
+				width: 225px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14pt;
+				color: #333333;
+				margin-left: 607.2px;
+				border-style: solid;
+				border-color: #91B428;
+				border-width: 1pt;
+				margin-top: -216px;
+				padding: 10px;
+			}
+			#grains-icon {
+				width: 225px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14pt;
+				color: #333333;
+				margin-left: 909.6px;
+				border-style: solid;
+				border-color: #91B428;
+				border-width: 1pt;
+				margin-top: -216px;
+				padding: 10px;
+			}
+			#beans-icon {
+				width: 225px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14pt;
+				color: #333333;
+				margin-left: 302.4px;
+				border-style: solid;
+				border-color: #91B428;
+				border-width: 1pt;
+				margin-top: 30px;
+				padding: 10px;
+			}
+			#nuts-icon {
+				width: 225px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14pt;
+				color: #333333;
+				margin-left: 607.2px;
+				border-style: solid;
+				border-color: #91B428;
+				border-width: 1pt;
+				margin-top: -216px;
+				padding: 10px;
+			}
+			#fats-icon {
+				width: 225px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14pt;
+				color: #333333;
+				margin-left: 909.6px;
+				border-style: solid;
+				border-color: #91B428;
+				border-width: 1pt;
+				margin-top: -216px;
+				padding: 10px;
+			}
+			#dairy-icon {
+				width: 225px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14pt;
+				color: #333333;
+				margin-left: 302.4;
+				border-style: solid;
+				border-color: #91B428;
+				border-width: 1pt;
+				margin-top: 30px;
+				padding: 10px;
+			}
+			#meat-icon {
+				width: 225px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14pt;
+				color: #333333;
+				margin-left: 607.2px;
+				border-style: solid;
+				border-color: #91B428;
+				border-width: 1pt;
+				margin-top: -216px;
+				padding: 10px;
+			}
+			#fish-icon {
+				width: 225px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14pt;
+				color: #333333;
+				margin-left: 909.6px;
+				border-style: solid;
+				border-color: #91B428;
+				border-width: 1pt;
+				margin-top: -216px;
+				padding: 10px;
+			}
+			#spice-icon {
+				width: 225px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14pt;
+				color: #333333;
+				margin-left: 302.4px;
+				border-style: solid;
+				border-color: #91B428;
+				border-width: 1pt;
+				margin-top: 30px;
+				padding: 10px;
+			}
+			#cond-icon {
+				width: 225px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 13pt;
+				color: #333333;
+				margin-left: 607.2px;
+				border-style: solid;
+				border-color: #91B428;
+				border-width: 1pt;
+				margin-top: -216px;
+				padding: 10px;
+			}
+			#sugar-icon {
+				width: 225px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14pt;
+				color: #333333;
+				margin-left: 909.6px;
+				border-style: solid;
+				border-color: #91B428;
+				border-width: 1pt;
+				margin-top: -216px;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="centerbox">
+			<div class="search-bar">
+				<strong>Search</strong>
+			</div>
+			<img class="logo" src="images/logohires.jpg">
+			<div class="topbox">
+				<h3>Online Nutrition and Health Eating Community - <em class="tagline">Where Questions Get Answers</em></h3>
+			</div>
+			<a href="" style="text-decoration: none;">
+			<div class="Home-tab">
+				<strong>Home</strong>
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div class="food-tab">
+				<strong>Seasonal <br/>Foods</strong>
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div class="cooking-tab">
+				<strong>Cooking <br/>School</strong>
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div class="nutrition-tab">
+				<strong>Nutrition <br/>Science</strong>
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div class="recipe-tab">
+				<strong>Recipes</strong>
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div class="gizmo-tab">
+				<strong>Gizmos &amp; <br/>Gadgets</strong>
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div class="pantry-tab">
+				<strong>Self-Reliant </br> Pantry</strong>
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div class="org-tab">
+				<strong>The <br/>Organized Cook</strong>
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div class="forums-tab">
+				<strong>Forums &amp; <br/>Groups</strong>
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div class="mystuff-tab">
+				<strong>My Stuff</strong>
+			</div>
+			</a>
+			<div class="title-bar">
+				<strong>FOOD HIGHLIGHTS</strong>
+			</div>
+			<div class="description-box">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus, massa sit amet rutrum convallis, sapien nunc convallis metus, 
+					ac iaculis nisi tortor quis ante. Phasellus bibendum elementum lectus rhoncus adipiscing. Curabitur vehicula, orci in placerat euismod, 
+					ante felis scelerisque massa, id tempus nisl nibh vel libero. Phasellus nulla eros, eleifend ut placerat id, accumsan venenatis libero. 
+					Donec vel eros varius, congue diam vel, euismod odio. Morbi sit amet justo porta, tincidunt nibh vel, condimentum nisi. Morbi dapibus nisi 
+					turpis. Sed ac sagittis quam, sed dignissim neque. Phasellus convallis porta odio eget dignissim. In velit ante, accumsan quis arcu et, 
+					euismod tempus arcu.</p>
+			</div>
+			<a href="" style="text-decoration: none;">
+			<div id="vegetables-icon">
+				<strong>Vegetables</strong> </br> </br>
+				<img class="veg-image" src="images/fh_main_place.jpg">
+			</div></a>
+			<a href="" style="text-decoration: none;">
+			<div id="fruits-icon">
+				<strong>Fruits</strong> </br></br>
+				<img class-"fruit-image" src="images/fh_main_place.jpg">
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div id="grains-icon">
+				<strong>Whole Grains</strong> </br></br>
+				<img class="grain-image" src="images/fh_main_place.jpg">
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div id="beans-icon">
+				<strong>Legumes</strong> </br></br>
+				<img class="grain-image" src="images/fh_main_place.jpg">
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div id="nuts-icon">
+				<strong>Nuts &amp; Seeds</strong> </br></br>
+				<img class="nuts-image" src="images/fh_main_place.jpg">
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div id="fats-icon">
+				<strong>Fats &amp; Oils</strong> </br></br>
+				<img class="fats-image" src="images/fh_main_place.jpg">
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div id="dairy-icon">
+				<strong>Dairy &amp; Eggs</strong> </br></br>
+				<img class="dairy-image" src="images/fh_main_place.jpg">
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div id="meat-icon">
+				<strong>Meat &amp; Poultry</strong> </br></br>
+				<img class="meat-image" src="images/fh_main_place.jpg">
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div id="fish-icon">
+				<strong>Fish &amp; Seafood</strong> </br></br>
+				<img class="fish-image" src="images/fh_main_place.jpg">
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div id="spice-icon">
+				<strong>Spices &amp; Herbs</strong> </br></br>
+				<img class="spice-image" src="images/fh_main_place.jpg">
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div id="cond-icon">
+				<strong>Condiments &amp; Seasonings</strong> </br></br>
+				<img class="cond-image" src="images/fh_main_place.jpg">
+			</div>
+			</a>
+			<a href="" style="text-decoration: none;">
+			<div id="sugar-icon">
+				<strong>Sweeteners</strong> </br></br>
+				<img class="sugar-image" src="images/fh_main_place.jpg">
+			</div>
+			</a>
+			<div class="footerbar">
+				
+			</div>
+			<img class="twitter" src="images/twitter_logo_footer2.jpg">
+			<img class="facebook" src="images/fb_logo_footer2.jpg">
+			<div class="footer-links">
+				<ul class="foot-links">
+				<li class="foot-links"><a class="foot" href="">About Us</a></li> 
+				<li class="foot-links"><a class="foot" href="">Advertising</a></li> 
+				<li class="foot-links"><a class="foot" href="">We Do Donate</a></li> 
+				<li class="foot-links"><a class="foot" href="">Media</a></li> 
+				<li class="foot-links"><a class="foot" href="">Contact Us</a></li> 
+				<li class="foot-links"><a class="foot" href="">FAQs</a></li> 
+				<li class="foot-links"><a class="foot" href="">Terms &amp; Conditions</a></li> 
+				<li class="foot-links"><a class="foot" href="">Privacy</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
