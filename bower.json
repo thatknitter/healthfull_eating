@@ -1,0 +1,13 @@
+{
+  "name": "healthfull_eating",
+  "version": "1.0.0",
+  "homepage": "https://github.com/thatknitter/healthfull_eating",
+  "authors": [
+    "thatknitter <kblewis.flt@gmail.com>"
+  ],
+  "description": "MVC version of HealthFULL Eating",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
