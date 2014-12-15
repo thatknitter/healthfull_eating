@@ -34,6 +34,42 @@
       .when('/mystuff', {
         templateUrl: 'views/comingsoon.html'
       })
+      .when('/vegetables', {
+        templateUrl: 'views/food_highlights/food_types/vegetables.html'
+      })
+      .when('/fruits', {
+        templateUrl: 'views/food_highlights/food_types/fruits.html'
+      })
+      .when('/whole_grains', {
+        templateUrl: 'views/food_highlights/food_types/whole_grains.html'
+      })
+      .when('/legumes', {
+        templateUrl: 'views/food_highlights/food_types/legumes.html'
+      })
+      .when('/nuts_seeds', {
+        templateUrl: 'views/food_highlights/food_types/nuts_seeds.html'
+      })
+      .when('/fats', {
+        templateUrl: 'views/food_highlights/food_types/fats_oils.html'
+      })
+      .when('/dairy_eggs', {
+        templateUrl: 'views/food_highlights/food_types/dairy_eggs.html'
+      })
+      .when('/meat_poultry', {
+        templateUrl: 'views/food_highlights/food_types/meat_poultry.html'
+      })
+      .when('/fish_seafood', {
+        templateUrl: 'views/food_highlights/food_types/fish_seafood.html'
+      })
+      .when('/spices_herbs', {
+        templateUrl: 'views/food_highlights/food_types/spices_herbs.html'
+      })
+      .when('/condiments', {
+        templateUrl: 'views/food_highlights/food_types/condiments.html'
+      })
+      .when('/sweeteners', {
+        templateUrl: 'views/food_highlights/food_types/sweeteners.html'
+      })
       .otherwise({redirectTo: '/'});
     });
   
