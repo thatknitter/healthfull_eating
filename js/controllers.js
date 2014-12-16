@@ -18,12 +18,16 @@
       
       var $panDry = $('.panDry');
       $panDry.click(addPanDry);
+      
+      var $herbSpice = $('.herbSpice');
+      $herbSpice.click(addHerb);
      
       var quickNum = 1;
       var equipNum = 1;
       var freshNum = 1;
       var panFreshNum = 1;
       var panDryNum = 1;
+      var herbNum = 1;
       
       function addQuick() {
         var $list = $('<li></li>');
@@ -98,6 +102,22 @@
         $list.append($formItem);
         $target.append($list);
         panDryNum = panDryNum + 1;
+      }
+      
+      function addHerb(){
+        var $list = $('<li></li>');
+        var title = 'Herb &amp; Spices ' + herbNum;
+        var $label = $('<label>' + title + '</label>');
+        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.herb' + herbNum + '"></br>' + '<label>Amount</label>' 
+        + '<input class="form-control" type="text" ng-model="recipe.newRecipe.herbAmount' + herbNum + '"></br>' + '<label>Ingredient Prep</label>' 
+        + '<input class="form-control" type="text" ng-model="recipe.newRecipe.herbPrep' + herbNum + '"></br>' + '<label>Special Instructions</label>' 
+        + '<input class="form-control" type="text" ng-model="recipe.newRecipe.herbSpecial' + herbNum + '">');
+        var $target = $('.herbTarget');
+        
+        $list.append($label);
+        $list.append($formItem);
+        $target.append($list);
+        herbNum = herbNum + 1; 
       }
 
     });
