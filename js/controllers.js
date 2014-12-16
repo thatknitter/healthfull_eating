@@ -4,24 +4,40 @@
     angular.module('healthApp')
     
     .controller('FormAdder', function() {
-      var $button = $('button');
-      $button.click(addQuick);
-      var itemNum = 1;
+      var $quick = $('.quick');
+      $quick.click(addQuick);
+
+      var $equip = $('.equip');
+      $equip.click(addEquip);
+     
+      var quickNum = 1;
+      var equipNum = 1;
       
       function addQuick() {
         var $list = $('<li></li>');
-        var title = 'Quick Item' + itemNum;
-        var $label = $('<label>' + title + '<label>');
-        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.quick' + itemNum + '">');
-        var $target = $('.target');
+        var title = 'Quick Item ' + quickNum;
+        var $label = $('<label>' + title + '</label>');
+        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.quick' + quickNum + '">');
+        var $target = $('.quickTarget');
                 
         $list.append($label);
         $list.append($formItem);
         $target.append($list);
-        
-        console.log('this works');
-        itemNum = itemNum + 1;
+        quickNum = quickNum + 1;
 
+      }
+      
+      function addEquip(){
+        var $list = $('<li></li>');
+        var title = 'Equipment ' + equipNum;
+        var $label = $('<label>' + title + '</label>');
+        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.equip' + equipNum + '">');
+        var $target = $('.equipTarget');
+        
+        $list.append($label);
+        $list.append($formItem);
+        $target.append($list);
+        equipNum = equipNum + 1;
       }
 
     });
