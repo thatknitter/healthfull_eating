@@ -21,6 +21,9 @@
       
       var $herbSpice = $('.herbSpice');
       $herbSpice.click(addHerb);
+      
+      var $direction = $('.direction');
+      $direction.click(addDirection);
      
       var quickNum = 1;
       var equipNum = 1;
@@ -28,6 +31,7 @@
       var panFreshNum = 1;
       var panDryNum = 1;
       var herbNum = 1;
+      var dirNum = 1;
       
       function addQuick() {
         var $list = $('<li></li>');
@@ -118,6 +122,19 @@
         $list.append($formItem);
         $target.append($list);
         herbNum = herbNum + 1; 
+      }
+      
+      function addDirection(){
+        var $list = $('<li></li>');
+        var title = 'Direction ' + dirNum;
+        var $label = $('<label>' + title + '</label>');
+        var $formItem = $('<input class="form-control" type="text" ng-model"recipe.newRecipe.direction' + dirNum + '">');
+        var $target = $('.directionTarget'); 
+        
+        $list.append($label);
+        $list.append($formItem);
+        $target.append($list);
+        dirNum = dirNum + 1;
       }
 
     });
