@@ -17,7 +17,7 @@
         templateUrl: 'views/nutrition_science/ns_main.html'
       })
       .when('/recipes', {
-        templateUrl: 'views/recipes/recipes_main.html'
+        templateUrl: 'views/recipes/recipe_inputer.html'
       })
       .when('/gizmo', {
         templateUrl: 'views/comingsoon.html'
