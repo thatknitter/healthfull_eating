@@ -12,10 +12,14 @@
       
       var $fresh = $('.fresh');
       $fresh.click(addFresh);
+      
+      var $panFresh = $('.panFresh');
+      $panFresh.click(addPanFresh);
      
       var quickNum = 1;
       var equipNum = 1;
       var freshNum = 1;
+      var panFreshNum = 1;
       
       function addQuick() {
         var $list = $('<li></li>');
@@ -58,6 +62,22 @@
         $list.append($formItem);
         $target.append($list);
         freshNum = freshNum + 1;
+      }
+      
+      function addPanFresh(){
+        var $list = $('<li></li>');
+        var title = 'Pantry Fresh Ingredient ' + panFreshNum;
+        var $label = $('<label>' + title + '</label>');
+        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.fresh' + panFreshNum + '"></br>' + '<label>Amount</label>' 
+        + '<input class="form-control" type="text" ng-model="recipe.newRecipe.amount' + panFreshNum + '"></br>' + '<label>Ingredient Prep</label>' 
+        + '<input class="form-control" type="text" ng-model="recipe.newRecipe.prep' + panFreshNum + '"></br>' + '<label>Special Instructions</label>' 
+        + '<input class="form-control" type="text" ng-model="recipe.newRecipe.special' + panFreshNum + '">');
+        var $target = $('.panFreshTarget');
+        
+        $list.append($label);
+        $list.append($formItem);
+        $target.append($list);
+        panFreshNum = panFreshNum + 1;
       }
 
     });
