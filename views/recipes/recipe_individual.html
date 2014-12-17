@@ -1,236 +1,257 @@
 <div class="rec-title">
-        {{recipe.name}}
+  {{recipe.name}}
 </div>
-      <div class="rec-pic">
-        <img src="images/placeholder.jpg">
-      </div>
-      <div class="rec-desc">
-        {{recipe.desc}}
-      </div>
-      <div class="info">
-        Recipe Information
-        <li class="time-info">Total Cook Time: {{recipe.total}}</li>
-        <li class="prep-info">Prep Time: {{recipe.prep}}</li>
-        <li class="active-info">Active Cook Time: {{recipe.active}}</li>
-        <li class="untend-info">Unattended Cook Time: {{recipe.untend}}</li>
-        <li class="skills">Cooking Skills: </li>
-        <li class="skills">Food Highlights:</li>
-        <li class="skills">Tags:</li>
-      </div>
-      <div class="rel-stuff">
-        <ul>
-          <li>Related Cooking School Lessons: <a href="{{recipes.cslink1}}">{{recipes.csles1}}</a>, <a href="recipes.cslink2">{{recipes.csles2}}</a>, <a href="{{recipes.cslink3}}">{{recipes.csles3}}</a></li> 
-          <li>Related Food Highlights: <a href="{{recipes.fhlink1}}">{{recipes.fhles1}}</a>, <a href="{{recipes.fhlink2}}">{{recipes.fhles2}}</a>, <a href="{{recipes.fhlink3}}">{{recipes.fhles3}}</a></li>  
-          <li>Related Articles: <a href="{{recipes.artlink1}}">{{recipes.artles1}}</a>, <a href="{{recipes.artlink2}}">{{recipes.artles2}}</a>, <a href="{{recipes.artlink3}}">{{recipes.artles3}}</a></li> 
-        </ul>
-      </div>
-      <div class="purple-line">
-        
-      </div>
-      <div class="serv-adj">
-        Recipe makes {{recipe.serve}} servings
-         
-      
-      </div>
-      <div class="purple-line">
-        
-      </div>
-      <div class="quick-over">
-        Quick Overview
-        <ol>
-          
-        </ol>
-        
-      </div>
-      <div class="icons">
-        <a href=""><img src="images/printer.jpg"></a> Print Recipe </br></br>
-        <a href=""><img src="images/list.jpg"></a> Print Shopping List </br></br>
-        <a href="" onclick="kfriendPop()"><img src="images/expand.jpg"></a> Kitchen Friendly View </br></br>
-        <script type="text/javascript">
-          
-          function kfriendPop() {
-            window.open("kitchen_friendly.php", "Kitchen Friendly View", "dependent=1, fullscreen=1, status=0")
-          }
-        </script>
-        <a href=""><img src="images/rec-box.jpg"></a> Save to My Recipe Box </br></br>
-        <a href=""><img src="images/restaurant.jpg"></a> Save to My Menu Plan </br></br>
-        <a href=""><img src="images/question.jpg"></a> Ask Questions/Comment </br></br>
-        <a href=""><img src="images/star.jpg"></a> Review </br></br>
-        <a href="mailto:?subject=I Love This Recipe! &body=You'll like this recipe I just tried at HealthFull Eating!"><img src="images/mail.jpg"></a> Email </br></br>
-        <div class="fb-like" data-send="false" data-width="30" data-show-faces="false"></div>
-        <div id="fb-root"></div>
-        <script>
-          ( function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id))
-                return;
-              js = d.createElement(s);
-              js.id = id;
-              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=297459673925";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-</script>
-        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> </br>
-        <script>
-          ! function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-            if (!d.getElementById(id)) {
-              js = d.createElement(s);
-              js.id = id;
-              js.src = p + '://platform.twitter.com/widgets.js';
-              fjs.parentNode.insertBefore(js, fjs);
-            }
-          }(document, 'script', 'twitter-wjs');
-</script>
-        <!-- Place this tag where you want the +1 button to render. -->
-        <div class="g-plusone" data-size="tall" data-annotation="none"></div>
-      
-        <!-- Place this tag after the last +1 button tag. -->
-        <script type="text/javascript">
-          (function() {
-            var po = document.createElement('script');
-            po.type = 'text/javascript';
-            po.async = true;
-            po.src = 'https://apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(po, s);
-          })();
-        </script>
-      </div>
-      <div class="equipment">
-        Equipment Needed
-      </div>
-      <div class="nut-info">
-        Nutrition Information </br></br>
-        <img src="images/nutrition_placeholder.jpg">
-      </div>
-      <div class="menu-plan">
-        My Menu Plan </br></br>
-        <div class="plan-items">
-          random thing </br>
-          random thing </br>
-          random thing </br> </br>
-          random thing </br>
-          random thing </br>
-          random thing </br></br>
-          random thing </br>
-          random thing </br>
-          random thing </br></br>
-        </div>
-        Planned Leftover Ideas </br></br>
-        <div class="plan-items">
-          random thing </br>
-          random thing </br>
-          random thing
-        </div>
-      </div>
-      <div class="food-list">
-        Ingredient &amp; Shopping List </br></br>
-      <form method="GET" action="shopping_list.php" name="ingredients">
-        <div class="subset-head"><u><em>Fresh Ingredients</em></u> </br></br>
-        <div class="subset-item">
-          <input type="checkbox" name="check_list" value="1" class="item">Item1
-        </div></br></br>
-        <div class="subset-item">
-          <input type="checkbox" name="check_list" value="2" class="item">Item2
-        </div></br></br>
-        <u><em>Pantry-Fresh</em></u> </br></br>
-        <div class="subset-item">
-          <input type="checkbox" name="check_list" value="3" class="item">Item3
-        </div></br></br>
-        <div class="subset-item">
-          <input type="checkbox" name="check_list" value="4" class="item">Item4
-        </div></br></br>
-        <u><em>Pantry-Dry</em></u> </br></br>
-        <div class="subset-item">
-          <input type="checkbox" name="check_list" value="5" class="item">Item5
-        </div></br></br>
-        <div class="subset-item">
-          <input type="checkbox" name="check_list" value="6" class="item">Item6
-        </div></br></br>
-        <u><em>Herbs &amp; Spices</em></u> </br></br>
-        <div class="subset-item">
-          <input type="checkbox" name="check_list" value="7" class="item">Item7
-        </div></br></br>
-        <div class="subset-item">
-          <input type="checkbox" name="check_list" value="8" class="item">Item8
-        </div></br></br>
-        <div class="check-button">
-          <input type="button" class="check" name="Check_All" value="Check All"
-onClick="CheckAll(document.ingredients.check_list)">
-        </div>
-        <div class="shop-button">
-          <input type="button" class="shop" value="Add to Shopping List">
-          <script type="text/javascript">
-           
-            function shopPop() {
-              window.open("shopping_list.php", "Shopping List", "dependent=1, fullscreen=0, height=720, width=540, top=10, resizeable=0, status=0")
-            }
-          </script>
-        </div>
-        <div class="help">
-        <a href="" class="help" onclick="helpPop()"><em>help</em></a>
-        <script type="text/javascript">
-        
-          function helpPop() {
-            window.open("ingredients_how_to.html", "Ingredients How To", "dependent=1, fullscreen=0, height=580, width=520, left=100, top=100, resizeable=0, status=0")
-          }
-        </script>
-        </div>
-        <div class="print">
-          Print Shopping List <img src="images/list.jpg" onclick="shopPop()">
-        </div>
-        </div>
-      </form>
-      </div>
-      <div class="purple-line"></div>
-      <div class="instructions">
-        Instructions
-        <div class="preheat">
-          Preheat oven to 350&deg;F 
-        </div>
-        <div class="subhead">
-        </br><em>Always read through the recipe before beginning. Prepare your mis en place.</em>
-        </div>
-        </br>1. <div class="inst-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis turpis malesuada arcu porttitor fermentum. Donec 
-          viverra, lorem vitae aliquam mollis, nisl odio lacinia nibh, vitae laoreet ante tellus in odio. Duis pharetra semper ligula nec mollis. 
-          Duis tincidunt nec nulla sit amet iaculis. Duis nec aliquet ante. Nulla a.</div>
-        </br>2. <div class="inst-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis turpis malesuada arcu porttitor fermentum. Donec 
-          viverra, lorem vitae aliquam mollis, nisl odio lacinia nibh, vitae laoreet ante tellus in odio. Duis pharetra semper ligula nec mollis. 
-          Duis tincidunt nec nulla sit amet iaculis. Duis nec aliquet ante. Nulla a.</div>
-        </br>3. <div class="inst-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis turpis malesuada arcu porttitor fermentum. Donec 
-          viverra, lorem vitae aliquam mollis, nisl odio lacinia nibh, vitae laoreet ante tellus in odio. Duis pharetra semper ligula nec mollis. 
-          Duis tincidunt nec nulla sit amet iaculis. Duis nec aliquet ante. Nulla a.</div>
-        </br>4. <div class="inst-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis turpis malesuada arcu porttitor fermentum. Donec 
-          viverra, lorem vitae aliquam mollis, nisl odio lacinia nibh, vitae laoreet ante tellus in odio. Duis pharetra semper ligula nec mollis. 
-          Duis tincidunt nec nulla sit amet iaculis. Duis nec aliquet ante. Nulla a.</div>
-        </br>5. <div class="inst-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis turpis malesuada arcu porttitor fermentum. Donec 
-          viverra, lorem vitae aliquam mollis, nisl odio lacinia nibh, vitae laoreet ante tellus in odio. Duis pharetra semper ligula nec mollis. 
-          Duis tincidunt nec nulla sit amet iaculis. Duis nec aliquet ante. Nulla a.</div>
-      </div>
-      <div class="purple-line"></div>
-      <div class="rec-recommend">
-        Other Recipes You May Like...
-        <div class="limg">
-          <img src="images/recommend_placeholder.jpg">
-        </br>Recipe
-        </div>
-        <div class="rimg">
-          <img src="images/recommend_placeholder.jpg">
-        </br>Recipe
-        </div>
-        <div class="limg">
-          <img src="images/recommend_placeholder.jpg">
-        </br>Recipe
-        </div>
-        <div class="rimg">
-          <img src="images/recommend_placeholder.jpg">
-        </br>Recipe
-        </div>
-      </div>
-      <div class="notes">
-        Cook to Cook Tips &amp; Notes
-      </div>
-      <div class="comments">
-        Discussions, Questions &amp; Comments
-      </div>
+<div class="rec-pic">
+  <img src="images/placeholder.jpg">
+</div>
+<div class="rec-desc">
+  {{recipe.desc}}
+</div>
+<div class="info">
+  Recipe Information
+  <li class="time-info">
+    Total Cook Time: {{recipe.total}}
+  </li>
+  <li class="prep-info">
+    Prep Time: {{recipe.prep}}
+  </li>
+  <li class="active-info">
+    Active Cook Time: {{recipe.active}}
+  </li>
+  <li class="untend-info">
+    Unattended Cook Time: {{recipe.untend}}
+  </li>
+  <li class="skills">
+    Cooking Skills:
+  </li>
+  <li class="skills">
+    Food Highlights:
+  </li>
+  <li class="skills">
+    Tags:
+  </li>
+</div>
+<div class="rel-stuff">
+  <ul>
+    <li>
+      Related Cooking School Lessons: <a href="{{recipes.cslink1}}">{{recipes.csles1}}</a>, <a href="recipes.cslink2">{{recipes.csles2}}</a>, <a href="{{recipes.cslink3}}">{{recipes.csles3}}</a>
+    </li>
+    <li>
+      Related Food Highlights: <a href="{{recipes.fhlink1}}">{{recipes.fhles1}}</a>, <a href="{{recipes.fhlink2}}">{{recipes.fhles2}}</a>, <a href="{{recipes.fhlink3}}">{{recipes.fhles3}}</a>
+    </li>
+    <li>
+      Related Articles: <a href="{{recipes.artlink1}}">{{recipes.artles1}}</a>, <a href="{{recipes.artlink2}}">{{recipes.artles2}}</a>, <a href="{{recipes.artlink3}}">{{recipes.artles3}}</a>
+    </li>
+  </ul>
+</div>
+<div class="purple-line">
+
+</div>
+<div class="serv-adj">
+  Recipe makes {{recipe.serve}} servings
+
+</div>
+<div class="purple-line">
+
+</div>
+<div class="quick-over">
+  Quick Overview
+  <ol ng-repeat="">
+
+  </ol>
+
+</div>
+<div class="icons">
+  <ul>
+    <li>
+      <a href=""><img src="images/printer.jpg"></a> Print Recipe
+    </li>
+    <li>
+      <a href=""><img src="images/list.jpg"></a> Print Shopping List
+    </li>
+    <li>
+      <a href="" onclick="kfriendPop()"><img src="images/expand.jpg"></a> Kitchen Friendly View
+    </li>
+    <script type="text/javascript">
+      function kfriendPop() {
+        window.open("kitchen_friendly.php", "Kitchen Friendly View", "dependent=1, fullscreen=1, status=0")
+      }
+    </script>
+    <li>
+      <a href=""><img src="images/rec-box.jpg"></a> Save to My Recipe Box
+    </li>
+    <li>
+      <a href=""><img src="images/restaurant.jpg"></a> Save to My Menu Plan
+    </li>
+    <li>
+      <a href=""><img src="images/question.jpg"></a> Ask Questions/Comment
+    </li>
+    <li>
+      <a href=""><img src="images/star.jpg"></a> Review
+    </li>
+    <li>
+      <a href="mailto:?subject=I Love This Recipe! &body=You'll like this recipe I just tried at HealthFull Eating!"><img src="images/mail.jpg"></a> Email
+    </li>
+    <div class="fb-like" data-send="false" data-width="30" data-show-faces="false"></div>
+    <div id="fb-root"></div>
+    <script>
+      ( function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id))
+            return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=297459673925";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> </br>
+    <script>
+      ! function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = p + '://platform.twitter.com/widgets.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      }(document, 'script', 'twitter-wjs');
+    </script>
+    <!-- Place this tag where you want the +1 button to render. -->
+    <div class="g-plusone" data-size="tall" data-annotation="none"></div>
+
+    <!-- Place this tag after the last +1 button tag. -->
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+  </ul>
+</div>
+<div class="equipment">
+  Equipment Needed
+  <ul ng-repeat="">
+
+  </ul>
+</div>
+<div class="nut-info">
+  Nutrition Information </br></br>
+  <img src="images/nutrition_placeholder.jpg">
+</div>
+<div class="menu-plan">
+  My Menu Plan </br></br>
+  <div class="plan-items">
+    <ul>
+      <li>
+        random thing
+      </li>
+      <li>
+        random thing
+      </li>
+      <li>
+        random thing
+      </li>
+      <li>
+        random thing
+      </li>
+      <li>
+        random thing
+      </li>
+      <li>
+        random thing
+      </li>
+      <li>
+        random thing
+      </li>
+      <li>
+        random thing
+      </li>
+      <li>
+        random thing
+      </li>
+    </ul>
+  </div>
+  Planned Leftover Ideas </br></br>
+  <div class="plan-items">
+    <li>
+      random thing
+    </li>
+    <li>
+      random thing
+    </li>
+    <li>
+      random thing
+    </li>
+  </div>
+</div>
+<div class="food-list">
+  Ingredient &amp; Shopping List </br></br>
+    <div class="subset-head">
+      <h3>Fresh Ingredients</h3>
+      <ol ng-repeat="">
+
+      </ol>
+      <h3>Pantry-Fresh</h3>
+      <ol ng-repeat="">
+
+      </ol>
+      <h3>Pantry-Dry</h3>
+      <ol ng-repeat="">
+
+      </ol>
+      <h3>Herbs &amp; Spices</h3>
+      <ol ng-repeat="">
+
+      </ol>
+
+    </div>
+    <div class="help">
+      <a href="" class="help" onclick="helpPop()"><em>help</em></a>
+      <script type="text/javascript">
+        function helpPop() {
+          window.open("ingredients_how_to.html", "Ingredients How To", "dependent=1, fullscreen=0, height=580, width=520, left=100, top=100, resizeable=0, status=0")
+        }
+      </script>
+    </div>
+</div>
+<div class="purple-line"></div>
+<div class="instructions">
+  Instructions
+  <div class="subhead">
+    <em>Always read through the recipe before beginning. Prepare your mis en place.</em>
+  </div>
+  <ol ng-repeat="">
+
+  </ol>
+</div>
+<div class="purple-line"></div>
+<div class="rec-recommend">
+  Other Recipes You May Like...
+  <div class="limg">
+    <img src="images/recommend_placeholder.jpg">
+    </br>Recipe
+  </div>
+  <div class="rimg">
+    <img src="images/recommend_placeholder.jpg">
+    </br>Recipe
+  </div>
+  <div class="limg">
+    <img src="images/recommend_placeholder.jpg">
+    </br>Recipe
+  </div>
+  <div class="rimg">
+    <img src="images/recommend_placeholder.jpg">
+    </br>Recipe
+  </div>
+</div>
+<div class="notes">
+  Cook to Cook Tips &amp; Notes
+</div>
+<div class="comments">
+  Discussions, Questions &amp; Comments
+</div>
