@@ -5,6 +5,7 @@
     
     .controller('FormAdder', function($http, $routeParams) {
       var vm = this;
+      vm.recipes = [];
       
       $http.get('https://healthrecipes.firebaseio.com/')
       .success(function(data){
@@ -147,7 +148,8 @@
       }
       
       vm.addRecipe = function(){
-        $http.post(vm.recipeItem, vm.newRecipe)
+        var name = $('.name');
+        $http.post('https://healthrecipes.firebaseio.com/' + name.serialize() + '.json', vm.newRecipe)
         .success(function(data){
           vm.recipeItem[data.name] = vm.newRecipe;
         }).error(function(err){
