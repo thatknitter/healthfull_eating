@@ -25,7 +25,9 @@
         templateUrl: 'views/comingsoon.html'
       })
       .when('/pantry', {
-        templateUrl: 'views/comingsoon.html'
+        templateUrl: 'views/recipes/recipe_individual.html',
+        controller: 'FormAdder',
+        controllerAs: 'recipe'
       })
       .when('/organized', {
         templateUrl: 'views/comingsoon.html'
