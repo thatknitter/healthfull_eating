@@ -19,7 +19,7 @@
       .when('/recipes', {
         templateUrl: 'views/recipes/recipe_inputer.html',
         controller: 'FormAdder',
-        controllerAs: 'add'
+        controllerAs: 'recipe'
       })
       .when('/gizmo', {
         templateUrl: 'views/comingsoon.html'

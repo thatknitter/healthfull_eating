@@ -148,8 +148,8 @@
       }
       
       vm.addRecipe = function(){
-        var name = $('.name');
-        $http.post('https://healthrecipes.firebaseio.com/' + name.serialize() + '.json', vm.newRecipe)
+        var name = vm.newRecipe.name;
+        $http.post('https://healthrecipes.firebaseio.com/' + encodeURI(name) + '.json', vm.newRecipe)
         .success(function(data){
           vm.recipeItem[data.name] = vm.newRecipe;
         }).error(function(err){

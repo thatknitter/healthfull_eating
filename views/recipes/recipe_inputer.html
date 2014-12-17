@@ -1,11 +1,11 @@
 <h1>Input Recipe</h1>
 
-<form name="recipeForm" ng-submit="add.addRecipe()">
+<form name="recipeForm" ng-submit="recipe.addRecipe()">
   <div class="time-desc">
     <ul>
       <li>
         <label class="control-label">Recipe Name:</label>
-        <input class="name" type="text" ng-model="recipe.newRecipe.name">
+        <input class="form-control" type="text" ng-model="recipe.newRecipe.name">
       </li>
       <li>
         <label class="control-label">Description:</label>
