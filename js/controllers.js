@@ -3,8 +3,15 @@
 
     angular.module('healthApp')
     
-    .controller('FormAdder', function() {
+    .controller('FormAdder', function($http, $routeParams) {
       var vm = this;
+      
+      $http.get('https://healthrecipes.firebaseio.com/')
+      .success(function(data){
+        vm.heathrecipes = data;
+      }).error(function(err){
+        alert('There has been a problem connecting to the API.');
+      });
       
       var $quick = $('.quick');
       $quick.click(addQuick);
@@ -139,7 +146,16 @@
         dirNum = dirNum + 1;
       }
       
-      
+      vm.addRecipe = function(){
+        $http.post(vm.recipeItem, vm.newRecipe)
+        .success(function(data){
+          vm.recipeItem[data.name] = vm.newRecipe;
+        }).error(function(err){
+          alert('Recipe could not be added.');
+        });
+        vm.recipes.push(vm.newRecipe);
+        vm.newRecipe = null;
+      };
       
     });
 
