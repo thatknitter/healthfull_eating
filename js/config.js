@@ -34,7 +34,7 @@
         templateUrl: 'views/comingsoon.html'
       })
       .when('/mystuff', {
-        templateUrl: 'views/comingsoon.html'
+        templateUrl: 'views/my_stuff/login.html'
       })
       .when('/vegetables', {
         templateUrl: 'views/food_highlights/food_types/vegetables.html'

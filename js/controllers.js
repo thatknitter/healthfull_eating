@@ -4,6 +4,8 @@
     angular.module('healthApp')
     
     .controller('FormAdder', function() {
+      var vm = this;
+      
       var $quick = $('.quick');
       $quick.click(addQuick);
 
@@ -136,7 +138,9 @@
         $target.append($list);
         dirNum = dirNum + 1;
       }
-
+      
+      
+      
     });
 
 
