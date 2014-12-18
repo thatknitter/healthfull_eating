@@ -1,13 +1,13 @@
 <form name="loginForm" ng-submit="login.login()" novalidate>
-  <div class="form-group">
+  <div class="form-group" ng-class="{'has-error': loginForm.$dirty && !login.email}">
     <label>Email Address</label>
     <input class="form-control" type="email" ng-model="login.email" required>
   </div>
-  <div class="form-group">
+  <div class="form-group" ng-class="{'has-error': loginForm.$dirty && !login.password}">
     <label>Password</label>
     <input class="form-control" type="password" ng-model="login.password" required>
   </div>
- <button ng-click="login.register()">Register</button>
-  <input type="submit" value="Login">
-  <button ng-click="login.forgotPassword()">Forgot Password</button>
+ <button ng-class="{disabled: loginForm.$invalid}" ng-click="login.register()">Register</button>
+  <input type="submit" value="Login" ng-class="{disabled: loginForm.$invalid}">
+  <button ng-class="{disabled: !login.email }" ng-click="login.forgotPassword()">Forgot Password</button>
 </form>

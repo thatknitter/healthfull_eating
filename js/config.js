@@ -36,7 +36,9 @@
         templateUrl: 'views/comingsoon.html'
       })
       .when('/mystuff', {
-        templateUrl: 'views/my_stuff/login.html'
+        templateUrl: 'views/my_stuff/login.html',
+        controller: 'LoginController',
+        controllerAs: 'login'
       })
       .when('/vegetables', {
         templateUrl: 'views/food_highlights/food_types/vegetables.html'
