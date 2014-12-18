@@ -30,7 +30,7 @@
         controllerAs: 'recipe'
       })
       .when('/organized', {
-        templateUrl: 'views/comingsoon.html'
+        templateUrl: 'views/org_cook/editor.html'
       })
       .when('/forums', {
         templateUrl: 'views/comingsoon.html'
