@@ -22,12 +22,6 @@
     Unattended Cook Time: {{recipe.untend}}
   </li>
   <li class="skills">
-    Cooking Skills:
-  </li>
-  <li class="skills">
-    Food Highlights:
-  </li>
-  <li class="skills">
     Tags:
   </li>
 </div>
@@ -70,14 +64,6 @@
       <a href=""><img src="images/list.jpg"></a> Print Shopping List
     </li>
     <li>
-      <a href="" onclick="kfriendPop()"><img src="images/expand.jpg"></a> Kitchen Friendly View
-    </li>
-    <script type="text/javascript">
-      function kfriendPop() {
-        window.open("kitchen_friendly.php", "Kitchen Friendly View", "dependent=1, fullscreen=1, status=0")
-      }
-    </script>
-    <li>
       <a href=""><img src="images/rec-box.jpg"></a> Save to My Recipe Box
     </li>
     <li>
@@ -92,8 +78,8 @@
     <li>
       <a href="mailto:?subject=I Love This Recipe! &body=You'll like this recipe I just tried at HealthFull Eating!"><img src="images/mail.jpg"></a> Email
     </li>
-    <div class="fb-like" data-send="false" data-width="30" data-show-faces="false"></div>
-    <div id="fb-root"></div>
+    <li><div class="fb-like" data-send="false" data-width="30" data-show-faces="false"></div>
+    <div id="fb-root"></div></li>
     <script>
       ( function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
@@ -105,7 +91,7 @@
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> </br>
+    <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></li>
     <script>
       ! function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -118,7 +104,7 @@
       }(document, 'script', 'twitter-wjs');
     </script>
     <!-- Place this tag where you want the +1 button to render. -->
-    <div class="g-plusone" data-size="tall" data-annotation="none"></div>
+    <li><div class="g-plusone" data-size="tall" data-annotation="none"></div></li>
 
     <!-- Place this tag after the last +1 button tag. -->
     <script type="text/javascript">
@@ -140,11 +126,12 @@
   </ul>
 </div>
 <div class="nut-info">
-  Nutrition Information </br></br>
+  <h4>Nutrition Information</h4>
+   
   <img src="images/nutrition_placeholder.jpg">
 </div>
 <div class="menu-plan">
-  My Menu Plan </br></br>
+  My Menu Plan 
   <div class="plan-items">
     <ul>
       <li>
@@ -176,7 +163,7 @@
       </li>
     </ul>
   </div>
-  Planned Leftover Ideas </br></br>
+  Planned Leftover Ideas 
   <div class="plan-items">
     <li>
       random thing
@@ -190,21 +177,21 @@
   </div>
 </div>
 <div class="food-list">
-  Ingredient &amp; Shopping List </br></br>
+  <h2>Ingredient &amp; Shopping List</h2>
     <div class="subset-head">
-      <h3>Fresh Ingredients</h3>
+      <h4>Fresh Ingredients</h4>
       <ol ng-repeat="">
 
       </ol>
-      <h3>Pantry-Fresh</h3>
+      <h4>Pantry-Fresh</h4>
       <ol ng-repeat="">
 
       </ol>
-      <h3>Pantry-Dry</h3>
+      <h4>Pantry-Dry</h4>
       <ol ng-repeat="">
 
       </ol>
-      <h3>Herbs &amp; Spices</h3>
+      <h4>Herbs &amp; Spices</h4>
       <ol ng-repeat="">
 
       </ol>
@@ -214,7 +201,7 @@
       <a href="" class="help" onclick="helpPop()"><em>help</em></a>
       <script type="text/javascript">
         function helpPop() {
-          window.open("ingredients_how_to.html", "Ingredients How To", "dependent=1, fullscreen=0, height=580, width=520, left=100, top=100, resizeable=0, status=0")
+          window.open("ingredients_how_to.html", "Ingredients How To", "dependent=1, fullscreen=0, height=580, width=520, left=100, top=100, resizeable=0, status=0");
         }
       </script>
     </div>
