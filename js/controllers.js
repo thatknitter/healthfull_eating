@@ -153,7 +153,10 @@
         var $list = $('<li></li>');
         var title = 'Fresh Ingredient ' + freshNum;
         var $label = $('<label>' + title + '</label>');
-        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.fresh' + freshNum + '"></br>' + '<label>Amount</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.amount' + freshNum + '"></br>' + '<label>Ingredient Prep</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.prep' + freshNum + '"></br>' + '<label>Special Instructions</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.special' + freshNum + '">');
+        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.fresh' + freshNum + '"></br>' + '<label>Amount</label>' 
+        + '<input class="form-control" type="text" ng-model="recipe.newRecipe.amount' + freshNum + '"></br>' + '<label>Ingredient Prep</label>' 
+        + '<input class="form-control" type="text" ng-model="recipe.newRecipe.prep' + freshNum + '"></br>' + '<label>Special Instructions</label>' 
+        + '<input class="form-control" type="text" ng-model="recipe.newRecipe.special' + freshNum + '">');
         var $target = $('.freshTarget');
 
         $list.append($label);
@@ -166,7 +169,10 @@
         var $list = $('<li></li>');
         var title = 'Pantry Fresh Ingredient ' + panFreshNum;
         var $label = $('<label>' + title + '</label>');
-        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.panFresh' + panFreshNum + '"></br>' + '<label>Amount</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.panFamount' + panFreshNum + '"></br>' + '<label>Ingredient Prep</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.panFprep' + panFreshNum + '"></br>' + '<label>Special Instructions</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.panFspecial' + panFreshNum + '">');
+        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.panFresh' + panFreshNum + '"></br>' 
+        + '<label>Amount</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.panFamount' + panFreshNum + '"></br>' 
+        + '<label>Ingredient Prep</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.panFprep' + panFreshNum + '"></br>' 
+        + '<label>Special Instructions</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.panFspecial' + panFreshNum + '">');
         var $target = $('.panFreshTarget');
 
         $list.append($label);
@@ -179,7 +185,10 @@
         var $list = $('<li></li>');
         var title = 'Pantry Dry Ingredient ' + panDryNum;
         var $label = $('<label>' + title + '</label>');
-        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.panDry' + panDryNum + '"></br>' + '<label>Amount</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.pDamount' + panDryNum + '"></br>' + '<label>Ingredient Prep</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.pDprep' + panDryNum + '"></br>' + '<label>Special Instructions</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.pDspecial' + panDryNum + '">');
+        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.panDry' + panDryNum + '"></br>' 
+        + '<label>Amount</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.pDamount' + panDryNum + '"></br>' 
+        + '<label>Ingredient Prep</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.pDprep' + panDryNum + '"></br>' 
+        + '<label>Special Instructions</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.pDspecial' + panDryNum + '">');
         var $target = $('.panDryTarget');
 
         $list.append($label);
@@ -192,7 +201,10 @@
         var $list = $('<li></li>');
         var title = 'Herb &amp; Spices ' + herbNum;
         var $label = $('<label>' + title + '</label>');
-        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.herb' + herbNum + '"></br>' + '<label>Amount</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.herbAmount' + herbNum + '"></br>' + '<label>Ingredient Prep</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.herbPrep' + herbNum + '"></br>' + '<label>Special Instructions</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.herbSpecial' + herbNum + '">');
+        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.herb' + herbNum + '"></br>' + '<label>Amount</label>' 
+        + '<input class="form-control" type="text" ng-model="recipe.newRecipe.herbAmount' + herbNum + '"></br>' + '<label>Ingredient Prep</label>' 
+        + '<input class="form-control" type="text" ng-model="recipe.newRecipe.herbPrep' + herbNum + '"></br>' + '<label>Special Instructions</label>' 
+        + '<input class="form-control" type="text" ng-model="recipe.newRecipe.herbSpecial' + herbNum + '">');
         var $target = $('.herbTarget');
 
         $list.append($label);
@@ -217,7 +229,8 @@
 
       vm.addRecipe = function() {
         var name = vm.newRecipe.name;
-        $http.post('https://healthrecipes.firebaseio.com/' + encodeURI(name) + '.json', vm.newRecipe).success(function(data) {
+        $http.post('https://healthrecipes.firebaseio.com/' + encodeURI(name) + '.json', vm.newRecipe)
+        .success(function(data) {
           vm.recipeItem[data.name] = vm.newRecipe;
         }).error(function(err) {
           alert('Recipe could not be added.');
