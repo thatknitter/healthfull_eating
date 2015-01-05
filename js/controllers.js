@@ -239,6 +239,13 @@
         vm.newRecipe = null;
       };
 
+    })
+    
+    .controller('ShowController', function(recipeFactory){
+      var vm = this;
+      recipeFactory.listRecipes(function(data){
+        vm.recipes = data;
+      });
     });
 
   }());

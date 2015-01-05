@@ -6,9 +6,9 @@
       function _recipeURL(name){
         
         if (name) {
-          return FIREBASE_URL + '/list/' + name + '.json';
+          return FIREBASE_URL + name + '/.json';
         } else {
-          return FIREBASE_URL + '/list.json';
+          return FIREBASE_URL + '/.json';
         }
 
       }
