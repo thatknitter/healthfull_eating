@@ -396,3 +396,177 @@ ul li.foot-links {
   margin-left: auto;
   margin-right: auto;
 }
+
+.title-bar {
+  width: 75%;
+  height: 31px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  background-color: #960066;
+  margin-left: 25%;
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 18pt;
+  letter-spacing: 2px;
+  -moz-box-shadow: 5px 3px 5px #B75D99, -3px -3px 5px #333333;
+  -webkit-box-shadow: 5px 3px 5px #B75D99, -3px -3px 5px #333333;
+  box-shadow: inset 5px 3px 5px #B75D99, inset -3px -3px 5px #333333;
+}
+
+.description-box {
+  width: 73.7%;
+  height: 300px;
+  border-style: solid;
+  border-width: 1pt;
+  margin-left: 25%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  padding-left: 8px;
+  padding-right: 5px;
+}
+
+#vegetables-icon {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #333333;
+  margin-left: 25%;
+  border-style: solid;
+  border-color: #91B428;
+  border-width: 1pt;
+  margin-top: 30px;
+  padding: 10px;
+}
+#fruits-icon {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #333333;
+  margin-left: 50%;
+  border-style: solid;
+  border-color: #91B428;
+  border-width: 1pt;
+  margin-top: -220px;
+  padding: 10px;
+}
+#grains-icon {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #333333;
+  margin-left: 75%;
+  border-style: solid;
+  border-color: #91B428;
+  border-width: 1pt;
+  margin-top: -220px;
+  padding: 10px;
+}
+#beans-icon {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #333333;
+  margin-left: 25%;
+  border-style: solid;
+  border-color: #91B428;
+  border-width: 1pt;
+  margin-top: 30px;
+  padding: 10px;
+}
+#nuts-icon {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #333333;
+  margin-left: 50%;
+  border-style: solid;
+  border-color: #91B428;
+  border-width: 1pt;
+  margin-top: -220px;
+  padding: 10px;
+}
+#fats-icon {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #333333;
+  margin-left: 75%;
+  border-style: solid;
+  border-color: #91B428;
+  border-width: 1pt;
+  margin-top: -220px;
+  padding: 10px;
+}
+#dairy-icon {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #333333;
+  margin-left: 25%;
+  border-style: solid;
+  border-color: #91B428;
+  border-width: 1pt;
+  margin-top: 30px;
+  padding: 10px;
+}
+#meat-icon {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #333333;
+  margin-left: 50%;
+  border-style: solid;
+  border-color: #91B428;
+  border-width: 1pt;
+  margin-top: -220px;
+  padding: 10px;
+}
+#fish-icon {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #333333;
+  margin-left: 75%;
+  border-style: solid;
+  border-color: #91B428;
+  border-width: 1pt;
+  margin-top: -220px;
+  padding: 10px;
+}
+#spice-icon {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #333333;
+  margin-left: 25%;
+  border-style: solid;
+  border-color: #91B428;
+  border-width: 1pt;
+  margin-top: 30px;
+  padding: 10px;
+}
+#cond-icon {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+  color: #333333;
+  margin-left: 50%;
+  border-style: solid;
+  border-color: #91B428;
+  border-width: 1pt;
+  margin-top: -220px;
+  padding: 10px;
+}
+#sugar-icon {
+  width: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #333333;
+  margin-left: 75%;
+  border-style: solid;
+  border-color: #91B428;
+  border-width: 1pt;
+  margin-top: -220px;
+  padding: 10px;
+}
