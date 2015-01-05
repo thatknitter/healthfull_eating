@@ -22,7 +22,7 @@
         controllerAs: 'recipe'
       })
       .when('/gizmo', {
-        templateUrl: 'views/comingsoon.html'
+        templateUrl: 'views/recipes/recipe_table.html'
       })
       .when('/pantry', {
         templateUrl: 'views/recipes/recipe_individual.html',

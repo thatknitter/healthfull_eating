@@ -8,6 +8,10 @@
         <input class="form-control" type="text" ng-model="recipe.newRecipe.name">
       </li>
       <li>
+        <label class="control-label">Image</label>
+        <input type="file" ng-model="recipe.files" ng-file-select ng-file-change="recipe.fileSelected($event)" accept="image/*" />
+      </li>
+      <li>
         <label class="control-label">Description:</label>
         <input class="form-control" type="text" ng-model="recipe.newRecipe.desc">
       </li>
