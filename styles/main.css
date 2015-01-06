@@ -799,7 +799,7 @@ ul li.foot-links {
   padding-left: 40px;
   margin-bottom: -20px;
 }
-.check-button {
+/*.check-button {
   text-align: left;
   margin-left: 60px;
 }
@@ -812,8 +812,8 @@ ul li.foot-links {
   -moz-box-shadow: 5px 3px 5px #B75D99, -3px -3px 5px #333333;
   -webkit-box-shadow: 5px 3px 5px #B75D99, -3px -3px 5px #333333;
   box-shadow: inset 5px 3px 5px #B75D99, inset -3px -3px 5px #333333;
-}
-.shop {
+}*/
+/*.shop {
   width: 200px;
   background-color: #960066;
   font-family: Arial, Helvetica, sans-serif;
@@ -827,7 +827,7 @@ ul li.foot-links {
   margin-left: 300px;
   text-align: left;
   margin-top: -31px;
-}
+}*/
 .help {
   text-align: right;
   text-decoration: none;
@@ -871,22 +871,22 @@ ul li.foot-links {
   font-family: geneva, verdana, Arial, Helvetica, sans-serif;
   color: #960066;
   font-size: 14pt;
-  margin-left: 315px;
+  margin-left: 27.5%;
   margin-top: 20px;
-  width: 575px;
+  width: 51%;
 }
 .subhead {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
   color: black;
 }
-.preheat {
+/*.preheat {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
   color: black;
   margin-left: 430px;
   margin-top: -15px;
-}
+}*/
 .inst-details {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
@@ -935,9 +935,9 @@ ul li.foot-links {
   font-family: geneva, verdana, Arial, Helvetica, sans-serif;
   color: #960066;
   font-size: 14pt;
-  margin-left: 315px;
+  margin-left: 27.5%;
   margin-top: 50px;
-  width: 575px;
+  width: 51%;
   height: 200px;
 }
 .comments {
@@ -945,8 +945,8 @@ ul li.foot-links {
   color: #333333;
   font-size: 14pt;
   text-align: center;
-  margin-left: 315px;
-  width: 575px;
+  margin-left: 27.5%;
+  width: 51%;
   height: 800px;
   border-style: solid;
   border-width: 2pt;
