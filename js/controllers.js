@@ -233,6 +233,7 @@
       var vm = this;
 
       vm.articleOptions = articleFactory.articleOptions;
+      
     });
 
   }());

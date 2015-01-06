@@ -46,11 +46,11 @@
       return{
         getRecipe: getRecipe,
         listRecipes: listRecipes,
-        deleteRecipe: deleteRecipe,
+        deleteRecipe: deleteRecipe
       };
       
     })
-    .factory('articleFactory', function(FIREBASE_URL, $http, $location){
+    .factory('articleFactory', function(ARTICLE_URL, $http, $location){
       
       var articleOptions = {
         fh: 'Food Highlights',
