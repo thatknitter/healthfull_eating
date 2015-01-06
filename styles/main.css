@@ -574,7 +574,7 @@ ul li.foot-links {
 .rec-title {
   width: 73%;
   height: 36px;
-  margin-left: 10px;
+  margin-left: 1%;
   margin-top: 20px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -593,7 +593,7 @@ ul li.foot-links {
 .rec-pic {
   border-style: solid;
   border-width: 1pt;
-  margin-left: 10px;
+  margin-left: 1%;
   width: 29%;
 }
 .rec-desc {
@@ -614,45 +614,45 @@ ul li.foot-links {
   letter-spacing: 1px;
   color: #91B428;
   padding-top: 10px;
-  width: 292px;
+  width: 23%;
   height: 230px;
   border-style: solid;
   border-width: 2pt;
   border-color: #B2AFAF;
-  margin-left: 900px;
+  margin-left: 75%;
   margin-top: -243px;
 }
 .rel-stuff {
-  width: 863px;
+  width: 71.8%;
   border-style: solid;
   border-width: 1pt;
   font-family: Arial, Helvetica, sans-serif;
   color: #960066;
   border-color: #000000;
-  margin-left: 10px;
+  margin-left: 1%;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 .purple-line {
-  width: 575px;
+  width: 51%;
   background-color: #960066;
   height: 4pt;
-  margin-left: 310px;
+  margin-left: 27.5%;
   margin-top: 30px;
 }
 .serv-adj {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 10px;
-  margin-left: 330px;
+  margin-left: 29%;
   font-size: 12pt;
   height: 52px;
 }
-.serv-button {
+/*.serv-button {
   margin-left: 700px;
   margin-top: -70px;
-}
-.serving-adjust {
+}*/
+/*.serving-adjust {
   width: 150px;
   height: 50px;
   background-color: #960066;
@@ -662,7 +662,7 @@ ul li.foot-links {
   -moz-box-shadow: 5px 3px 5px #B75D99, -3px -3px 5px #333333;
   -webkit-box-shadow: 5px 3px 5px #B75D99, -3px -3px 5px #333333;
   box-shadow: inset 5px 3px 5px #B75D99, inset -3px -3px 5px #333333;
-}
+}*/
 .quick-over {
   font-family: Geneva, Verdana, Arial, Helvetica, sans-serif;
   text-align: center;
@@ -670,12 +670,12 @@ ul li.foot-links {
   letter-spacing: 1px;
   color: #91B428;
   padding-top: 10px;
-  width: 292px;
+  width: 25.7%;
   padding-bottom: 20px;
   border-style: solid;
   border-width: 2pt;
   border-color: #B2AFAF;
-  margin-left: 10px;
+  margin-left: 1%;
   margin-top: -105px;
 }
 .quick-step {
@@ -685,6 +685,37 @@ ul li.foot-links {
   text-align: left;
   font-size: 12pt;
   padding-left: 5px;
+}
+.equipment {
+  font-family: Geneva, Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 14pt;
+  letter-spacing: 1px;
+  color: #91B428;
+  padding-top: 10px;
+  width: 25.7%;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-width: 2pt;
+  border-color: #B2AFAF;
+  margin-left: 1%;
+  margin-top: -2px;
+  height: 280px;
+}
+.nut-info {
+  font-family: Geneva, Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 14pt;
+  letter-spacing: 1px;
+  color: #91B428;
+  padding-top: 10px;
+  width: 25.7%;
+  height: 430px;
+  border-style: solid;
+  border-width: 2pt;
+  border-color: #B2AFAF;
+  margin-left: 1%;
+  margin-top: -2px;
 }
 .time-info {
   list-style-type: none;
@@ -734,27 +765,25 @@ ul li.foot-links {
 .icons {
   border-style: solid;
   border-color: #B2AFAF;
-  width: 287px;
+  width: 19%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
   border-width: 2pt;
-  padding-left: 5px;
   padding-top: 5px;
-  margin-left: 900px;
-  margin-top: -397px;
+  margin-left: 79%;
+  margin-top: -814px;
 }
-.twitter-share-button {
-  padding-bottom: 10px;
-  padding-top: 5px;
+.icons ul li {
+  list-style-type: none;
 }
 .food-list {
   text-align: center;
-  width: 575px;
+  width: 51%;
   font-family: Geneva, Verdana, Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #960066;
-  margin-left: 305px;
-  margin-top: -670px;
+  margin-left: 27.5%;
+  margin-top: -150px;
 }
 .subset-head {
   font-family: Arial, Helvetica, sans-serif;
@@ -815,37 +844,7 @@ ul li.foot-links {
   margin-top: 20px;
   text-align: center;
 }
-.equipment {
-  font-family: Geneva, Verdana, Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-size: 14pt;
-  letter-spacing: 1px;
-  color: #91B428;
-  padding-top: 10px;
-  width: 292px;
-  padding-bottom: 20px;
-  border-style: solid;
-  border-width: 2pt;
-  border-color: #B2AFAF;
-  margin-left: 10px;
-  margin-top: -30px;
-  height: 280px;
-}
-.nut-info {
-  font-family: Geneva, Verdana, Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-size: 14pt;
-  letter-spacing: 1px;
-  color: #91B428;
-  padding-top: 10px;
-  width: 292px;
-  height: 410px;
-  border-style: solid;
-  border-width: 2pt;
-  border-color: #B2AFAF;
-  margin-left: 10px;
-  margin-top: 25px;
-}
+
 .menu-plan {
   font-family: Geneva, Verdana, Arial, Helvetica, sans-serif;
   text-align: center;
