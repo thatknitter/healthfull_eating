@@ -34,7 +34,7 @@
       .when('/organized', {
         templateUrl: 'views/org_cook/editor.html',
         controller: 'EpicEditor',
-        controllerAs: 'editor'
+        controllerAs: 'article'
       })
       .when('/forums', {
         templateUrl: 'views/comingsoon.html'

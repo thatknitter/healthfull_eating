@@ -50,7 +50,7 @@
       };
       
     })
-    .factory('articleFactory', function(ARTICLE_URL, $http, $location){
+    .factory('articleFactory', function($http, $location){
       
       var articleOptions = {
         fh: 'Food Highlights',
