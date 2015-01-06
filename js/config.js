@@ -32,7 +32,9 @@
         controllerAs: 'recipe'
       })
       .when('/organized', {
-        templateUrl: 'views/org_cook/editor.html'
+        templateUrl: 'views/org_cook/editor.html',
+        controller: 'EpicEditor',
+        controllerAs: 'editor'
       })
       .when('/forums', {
         templateUrl: 'views/comingsoon.html'

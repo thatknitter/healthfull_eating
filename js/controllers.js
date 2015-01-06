@@ -246,6 +246,10 @@
       recipeFactory.listRecipes(function(data){
         vm.recipes = data;
       });
+    })
+    
+    .controller('EpicEditor', function(){
+      var editor = new EpicEditor().load();
     });
 
   }());

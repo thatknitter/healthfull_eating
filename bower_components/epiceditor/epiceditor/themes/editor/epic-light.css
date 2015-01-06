@@ -1,7 +1,9 @@
 html { padding:10px; }
 
-body {
-  border:0;
+#epiceditor {
+  border-style: solid;
+  border: 1pt;
+  border-color: #333333;
   background:#fcfcfc;
   font-family:monospace;
   font-size:14px;
@@ -9,4 +11,5 @@ body {
   line-height:1.35em;
   margin:0;
   padding:0;
+  height: 800px;
 }
