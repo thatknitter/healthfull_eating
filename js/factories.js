@@ -43,10 +43,21 @@
         });
       }
       
+      var articleOptions = {
+        fh: 'Food Highlights',
+        cs: 'Cooking School',
+        ns: 'Nutrition Science',
+        gizmo: 'Gizmos and Gadgets',
+        pantry: 'Self-Reliant Pantry',
+        org: 'The Organized Cook',
+        misc: 'Miscellaneous Articles'
+      };
+      
       return{
         getRecipe: getRecipe,
         listRecipes: listRecipes,
-        deleteRecipe: deleteRecipe
+        deleteRecipe: deleteRecipe,
+        articleOptions: articleOptions
       };
       
     });

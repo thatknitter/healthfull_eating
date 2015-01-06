@@ -1,12 +1,20 @@
-<form>
-  <label>Article Title</label>
-  <input type="text" />
+<form name="articleEditor" ng-submit="article.addArticle()">
+  <label class="control-label">Type of Article</label>
+  <select ng-model="article.newArticle.type">
+      <option value="{{val}}" ng-repeat="(val, text) in article.articleOptions">
+        {{text}}
+      </option>
+    </select>
+  <input class="form-control" type="">
+  <label class="control-label">Article Title</label>
+  <input class="form-control" type="text" ng-model="article.newArticle.title" />
   
-  <label>Date of Publication</label>
-  <input type="date" />
+  <label class="control-label">Date of Publication</label>
+  <input class="form-control" type="date" ng-model="article.newArticle.date" />
   
-  <label>Image Upload</label>
-  <input type="url" />
+  <label class="control-label">Image Upload</label>
+  <input class="form-control" type="url" />
   
-  <div id="epiceditor"></div>
+  <label class="control-label">Article</label>
+  <div id="epiceditor" class="form-control" ng-model="article.newArticle.content"></div>
 </form>
