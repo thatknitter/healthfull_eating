@@ -136,13 +136,16 @@
       </div>
     </ul>
   </div>
-  <div class="pantry-dry">
-    <a class="panDry">
+  <div class="pantry-dry" ng-click="recipe.addPanDry()">
+    <div class="panDry">
       Add Pantry Dry Ingredient
-    </a>
+    </div>
     <ul>
-      <div class="panDryTarget">
-
+      <div class="panDryTarget" ng-repeat="panDry in recipe.newRecipe.pantryDryIngredients">
+        <li><label>Pantry Dry Ingredient {{$index+1}}:</label><input class="form-control" type="text" placeholder="name" ng-model="panDry.name">
+          <br /><input class="form-control" type="text" placeholder="amount" ng-model="panDry.amount">
+          <br /><input class="form-control" type="text" placeholder="prep" ng-model="panDry.prep">
+          <br /><input class="form-control" type="text" placeholder="special instructions" ng-model="panDry.special"></li>
       </div>
     </ul>
   </div>
