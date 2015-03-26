@@ -85,6 +85,7 @@
       vm.newRecipe.quickOverviewItems = [];
       vm.newRecipe.equipmentItems = [];
       vm.newRecipe.freshIngredients = [];
+      vm.newRecipe.pantryFreshIngredients = [];
 
       $http.get('https://healthrecipes.firebaseio.com/').success(function(data) {
         vm.heathrecipes = data;
@@ -101,8 +102,8 @@
       // var $fresh = $('.fresh');
       // $fresh.click(addFresh);
 
-      var $panFresh = $('.panFresh');
-      $panFresh.click(addPanFresh);
+      // var $panFresh = $('.panFresh');
+      // $panFresh.click(addPanFresh);
 
       var $panDry = $('.panDry');
       $panDry.click(addPanDry);
@@ -133,18 +134,9 @@
         vm.newRecipe.freshIngredients.push({overview: ""});
       };
 
-      function addPanFresh() {
-        var $list = $('<li></li>');
-        var title = 'Pantry Fresh Ingredient ' + panFreshNum;
-        var $label = $('<label>' + title + '</label>');
-        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.panFresh' + panFreshNum + '"></br>' + '<label>Amount</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.panFamount' + panFreshNum + '"></br>' + '<label>Ingredient Prep</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.panFprep' + panFreshNum + '"></br>' + '<label>Special Instructions</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.panFspecial' + panFreshNum + '">');
-        var $target = $('.panFreshTarget');
-
-        $list.append($label);
-        $list.append($formItem);
-        $target.append($list);
-        panFreshNum = panFreshNum + 1;
-      }
+      vm.addPanFresh = function(){
+        vm.newRecipe.pantryFreshIngredients.push({overview: ""});
+      };
 
       function addPanDry() {
         var $list = $('<li></li>');
