@@ -5,8 +5,8 @@
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="name in show.recipes">
-      <td>{{name}}</td>
+    <tr ng-repeat="(itemId, item) in list">
+      <td><a href="/#/pantry/{{itemId}}">{{item.name}}</a></td>
     </tr>
   </tbody>
 </table>

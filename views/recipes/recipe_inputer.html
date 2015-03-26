@@ -106,7 +106,7 @@
     </div>
     <ul>
       <div class="equipTarget" ng-repeat="equipment in recipe.newRecipe.equipmentItems">
-        <li><label>Equipment {{$index+1}}:</label><input class="form-control" type="text" ng-model="equipment.item"></li>
+        <li><label>Equipment {{$index+1}}:</label><input class="form-control" type="text" ng-model="equipment.thing"></li>
       </div>
     </ul>
   </div>
@@ -154,7 +154,7 @@
       Add Herb or Spice Ingredient
     </div>
     <ul>
-      <div class="herbTarget" ng-repeat="herb in recipe.newRecipe.herbsSpices">
+      <div class="herbTarget" ng-repeat="herb in recipe.newRecipe.herbSpices">
         <li><label>Herbs and Spices {{$index+1}}:</label><input class="form-control" type="text" placeholder="name" ng-model="herb.name">
           <br /><input class="form-control" type="text" placeholder="amount" ng-model="herb.amount">
           <br /><input class="form-control" type="text" placeholder="prep" ng-model="herb.prep">

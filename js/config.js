@@ -26,10 +26,10 @@
         controller: 'ShowController',
         controllerAs: 'show'
       })
-      .when('/pantry', {
+      .when('/pantry/:id', {
         templateUrl: 'views/recipes/recipe_individual.html',
-        controller: 'FormAdder',
-        controllerAs: 'recipe'
+        controller: 'IndividualController',
+        controllerAs: 'individual'
       })
       .when('/organized', {
         templateUrl: 'views/org_cook/editor.html',

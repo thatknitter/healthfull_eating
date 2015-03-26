@@ -137,11 +137,23 @@
       };
 
     })
-    .controller('ShowController', function(recipeFactory) {
-      var vm = this;
-      recipeFactory.listRecipes(function(data) {
-        vm.recipes = data;
-      });
+    .controller('ShowController', function(recipeFactory, $http, $scope) {
+      $http.get(recipeFactory._recipeURL())
+        .success(function(data){
+          $scope.list = data;
+        })
+        .error(function(err){
+          console.log(err);
+        });
+      })
+    .controller('IndividualController', function(recipeFactory, $http, $scope, $routeParams) {
+      $http.get(recipeFactory._recipeURL($routeParams.id))
+        .success(function(data){
+          $scope.list = data;
+        })
+        .error(function(err){
+          console.log(err);
+        });
     })
     .controller('EpicEditor', function(articleFactory) {
       var editor = new EpicEditor().load();

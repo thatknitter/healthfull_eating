@@ -6,9 +6,9 @@
       function _recipeURL(name){
         
         if (name) {
-          return FIREBASE_URL + name + '/.json';
+          return FIREBASE_URL + "recipes/" + name + '/.json';
         } else {
-          return FIREBASE_URL + '/.json';
+          return FIREBASE_URL + "recipes/" + '/.json';
         }
 
       }
@@ -46,7 +46,8 @@
       return{
         getRecipe: getRecipe,
         listRecipes: listRecipes,
-        deleteRecipe: deleteRecipe
+        deleteRecipe: deleteRecipe,
+        _recipeURL: _recipeURL
       };
       
     })

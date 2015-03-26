@@ -1,25 +1,25 @@
 <div class="rec-title">
-  {{recipe.name}}
+  {{list.name}}
 </div>
 <div class="rec-pic">
   <img src="images/placeholder.jpg">
 </div>
 <div class="rec-desc">
-  {{recipe.desc}}
+  {{list.desc}}
 </div>
 <div class="info">
   Recipe Information
   <li class="time-info">
-    Total Cook Time: {{recipe.total}}
+    Total Cook Time: {{list.total}}
   </li>
   <li class="prep-info">
-    Prep Time: {{recipe.prep}}
+    Prep Time: {{list.prep}}
   </li>
   <li class="active-info">
-    Active Cook Time: {{recipe.active}}
+    Active Cook Time: {{list.active}}
   </li>
   <li class="untend-info">
-    Unattended Cook Time: {{recipe.untend}}
+    Unattended Cook Time: {{list.untend}}
   </li>
   <li class="skills">
     Tags:
@@ -28,13 +28,13 @@
 <div class="rel-stuff">
   <ul>
     <li>
-      Related Cooking School Lessons: <a href="{{recipes.cslink1}}">{{recipes.csles1}}</a>, <a href="recipes.cslink2">{{recipes.csles2}}</a>, <a href="{{recipes.cslink3}}">{{recipes.csles3}}</a>
+      Related Cooking School Lessons: <a href="{{list.cslink1}}">{{list.csles1}}</a>, <a href="list.cslink2">{{list.csles2}}</a>, <a href="{{list.cslink3}}">{{list.csles3}}</a>
     </li>
     <li>
-      Related Food Highlights: <a href="{{recipes.fhlink1}}">{{recipes.fhles1}}</a>, <a href="{{recipes.fhlink2}}">{{recipes.fhles2}}</a>, <a href="{{recipes.fhlink3}}">{{recipes.fhles3}}</a>
+      Related Food Highlights: <a href="{{link.fhlink1}}">{{list.fhles1}}</a>, <a href="{{link.fhlink2}}">{{list.fhles2}}</a>, <a href="{{list.fhlink3}}">{{list.fhles3}}</a>
     </li>
     <li>
-      Related Articles: <a href="{{recipes.artlink1}}">{{recipes.artles1}}</a>, <a href="{{recipes.artlink2}}">{{recipes.artles2}}</a>, <a href="{{recipes.artlink3}}">{{recipes.artles3}}</a>
+      Related Articles: <a href="{{list.artlink1}}">{{list.artles1}}</a>, <a href="{{list.artlink2}}">{{list.artles2}}</a>, <a href="{{list.artlink3}}">{{list.artles3}}</a>
     </li>
   </ul>
 </div>
@@ -50,17 +50,16 @@
 </div>
 <div class="quick-over">
   Quick Overview
-  <ol ng-repeat="">
-
+  <ol ng-repeat="item in list.quickOverviewItems">
+    {{item.overview}}
   </ol>
 
 </div>
 <div class="equipment">
   Equipment Needed
-  <ul ng-repeat="">
-
-  </ul>
-</div>
+  <ul ng-repeat="item in list.equipmentItems">
+    {{item.thing}}
+  </ul></div>
 <div class="nut-info">
   <h4>Nutrition Information</h4>
    
@@ -140,20 +139,20 @@
   <h2>Ingredient &amp; Shopping List</h2>
     <div class="subset-head">
       <h4>Fresh Ingredients</h4>
-      <ol ng-repeat="">
-
+      <ol ng-repeat="item in list.freshIngredients">
+        {{item.name}}, {{item.amount}} {{item.prep}}, {{item.special}}
       </ol>
       <h4>Pantry-Fresh</h4>
-      <ol ng-repeat="">
-
+      <ol ng-repeat="item in list.pantryFreshIngredients">
+        {{item.name}}, {{item.amount}} {{item.prep}}, {{item.special}}
       </ol>
       <h4>Pantry-Dry</h4>
-      <ol ng-repeat="">
-
+      <ol ng-repeat="item in list.pantryDryIngredients">
+        {{item.name}}, {{item.amount}} {{item.prep}}, {{item.special}}
       </ol>
       <h4>Herbs &amp; Spices</h4>
-      <ol ng-repeat="">
-
+      <ol ng-repeat="item in list.herbSpices">
+        {{item.name}}, {{item.amount}} {{item.prep}}, {{item.special}}
       </ol>
 
     </div>
@@ -172,8 +171,8 @@
   <div class="subhead">
     <em>Always read through the recipe before beginning. Prepare your mis en place.</em>
   </div>
-  <ol ng-repeat="">
-
+  <ol ng-repeat="item in list.directions">
+    {{item.item}}
   </ol>
 </div>
 <div class="purple-line"></div>

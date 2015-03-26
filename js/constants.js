@@ -1,7 +1,7 @@
 ;( function() {
     'use strict';
     angular.module('healthApp')
-      .constant('FIREBASE_URL', 'https://healthrecipes.firebaseio.com')
+      .constant('FIREBASE_URL', 'https://healthrecipes.firebaseio.com/')
       .constant('FOOD_URL', 'https://foodhighlights.firebaseio.com/')
       .constant('COOK_URL', 'https://cookingschool.firebaseio.com/')
       .constant('NUT_URL', 'https://nutritionscience.firebaseio.com/')
