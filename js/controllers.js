@@ -88,41 +88,13 @@
       vm.newRecipe.pantryFreshIngredients = [];
       vm.newRecipe.pantryDryIngredients = [];
       vm.newRecipe.herbSpices = [];
+      vm.newRecipe.directions = [];
 
       $http.get('https://healthrecipes.firebaseio.com/').success(function(data) {
         vm.heathrecipes = data;
       }).error(function(err) {
         alert('There has been a problem connecting to the API.');
       });
-
-      // var $quick = $('.quick');
-      // $quick.click(addQuick);
-
-      // var $equip = $('.equip');
-      // $equip.click(addEquip);
-
-      // var $fresh = $('.fresh');
-      // $fresh.click(addFresh);
-
-      // var $panFresh = $('.panFresh');
-      // $panFresh.click(addPanFresh);
-
-      // var $panDry = $('.panDry');
-      // $panDry.click(addPanDry);
-
-      // var $herbSpice = $('.herbSpice');
-      // $herbSpice.click(addHerb);
-
-      var $direction = $('.direction');
-      $direction.click(addDirection);
-
-      var quickNum = 1;
-      var equipNum = 1;
-      var freshNum = 1;
-      var panFreshNum = 1;
-      var panDryNum = 1;
-      var herbNum = 1;
-      var dirNum = 1;
 
       vm.addQuick = function(){
         vm.newRecipe.quickOverviewItems.push({overview: ""});
@@ -148,18 +120,9 @@
         vm.newRecipe.herbSpices.push({overview: ""});
       };
 
-      function addDirection() {
-        var $list = $('<li></li>');
-        var title = 'Direction ' + dirNum;
-        var $label = $('<label>' + title + '</label>');
-        var $formItem = $('<input class="form-control" type="text" ng-model"recipe.newRecipe.direction' + dirNum + '">');
-        var $target = $('.directionTarget');
-
-        $list.append($label);
-        $list.append($formItem);
-        $target.append($list);
-        dirNum = dirNum + 1;
-      }
+     vm.addDirection = function(){
+       vm.newRecipe.directions.push({overview: ""});
+     };
 
 
       vm.addRecipe = function() {

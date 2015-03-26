@@ -163,12 +163,12 @@
     </ul>
   </div>
   <div class="instructionsField">
-    <a class="direction">
+    <div class="direction" ng-click="recipe.addDirection()">
       Add Direction Box
-    </a>
+    </div>
     <ul>
-      <div class="directionTarget">
-
+      <div class="directionTarget" ng-repeat="info in recipe.newRecipe.directions">
+        <li><label>Direction {{$index+1}}</label><input class="form-control" type="text" placeholder="name" ng-model="direction.item"></li>
       </div>
     </ul>
   </div>
