@@ -91,32 +91,35 @@
     </ul>
   </div>
   <div class="over">
-    <a class="quick">
+    <div class="quick" ng-click="recipe.addQuick()">
       Add Quick Overview Item
-    </a>
+    </div>
     <ul>
-      <div class="quickTarget">
-
+      <div class="quickTarget" ng-repeat="quick in recipe.newRecipe.quickOverviewItems">
+        <li><label>Quick Item {{$index+1}}:</label><input class="form-control" type="text" ng-model="quick.overview"></li>
       </div>
     </ul>
   </div>
   <div class="equipmentField">
-    <a class="equip">
+    <div class="equip" ng-click="recipe.addEquip()">
       Add Equipment Item
-    </a>
+    </div>
     <ul>
-      <div class="equipTarget">
-
+      <div class="equipTarget" ng-repeat="equipment in recipe.newRecipe.equipmentItems">
+        <li><label>Equipment {{$index+1}}:</label><input class="form-control" type="text" ng-model="equipment.item"></li>
       </div>
     </ul>
   </div>
   <div class="fresh-list">
-    <a class="fresh">
+    <div class="fresh" ng-click="recipe.addFresh()">
       Add Fresh Ingredient
-    </a>
+    </div>
     <ul>
-      <div class="freshTarget">
-
+      <div class="freshTarget" ng-repeat="fresh in recipe.newRecipe.freshIngredients">
+        <li><label>Fresh Ingredient {{$index+1}}:</label><input class="form-control" type="text" placeholder="name" ng-model="fresh.name">
+          <br /><input class="form-control" type="text" placeholder="amount" ng-model="fresh.amount">
+          <br /><input class="form-control" type="text" placeholder="prep" ng-model="fresh.prep">
+          <br /><input class="form-control" type="text" placeholder="special instructions" ng-model="fresh.special"></li>
       </div>
     </ul>
   </div>

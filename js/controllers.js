@@ -81,6 +81,10 @@
     .controller('FormAdder', function($http, $routeParams) {
       var vm = this;
       vm.recipes = [];
+      vm.newRecipe = {};
+      vm.newRecipe.quickOverviewItems = [];
+      vm.newRecipe.equipmentItems = [];
+      vm.newRecipe.freshIngredients = [];
 
       $http.get('https://healthrecipes.firebaseio.com/').success(function(data) {
         vm.heathrecipes = data;
@@ -88,14 +92,14 @@
         alert('There has been a problem connecting to the API.');
       });
 
-      var $quick = $('.quick');
-      $quick.click(addQuick);
+      // var $quick = $('.quick');
+      // $quick.click(addQuick);
 
-      var $equip = $('.equip');
-      $equip.click(addEquip);
+      // var $equip = $('.equip');
+      // $equip.click(addEquip);
 
-      var $fresh = $('.fresh');
-      $fresh.click(addFresh);
+      // var $fresh = $('.fresh');
+      // $fresh.click(addFresh);
 
       var $panFresh = $('.panFresh');
       $panFresh.click(addPanFresh);
@@ -117,45 +121,17 @@
       var herbNum = 1;
       var dirNum = 1;
 
-      function addQuick() {
-        var $list = $('<li></li>');
-        var title = 'Quick Item ' + quickNum;
-        var $label = $('<label>' + title + '</label>');
-        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.quick' + quickNum + '">');
-        var $target = $('.quickTarget');
+      vm.addQuick = function(){
+        vm.newRecipe.quickOverviewItems.push({overview: ""});
+      };
 
-        $list.append($label);
-        $list.append($formItem);
-        $target.append($list);
-        quickNum = quickNum + 1;
+      vm.addEquip = function(){
+        vm.newRecipe.equipmentItems.push({overview: ""});
+      };
 
-      }
-
-      function addEquip() {
-        var $list = $('<li></li>');
-        var title = 'Equipment ' + equipNum;
-        var $label = $('<label>' + title + '</label>');
-        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.equip' + equipNum + '">');
-        var $target = $('.equipTarget');
-
-        $list.append($label);
-        $list.append($formItem);
-        $target.append($list);
-        equipNum = equipNum + 1;
-      }
-
-      function addFresh() {
-        var $list = $('<li></li>');
-        var title = 'Fresh Ingredient ' + freshNum;
-        var $label = $('<label>' + title + '</label>');
-        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.fresh' + freshNum + '"></br>' + '<label>Amount</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.amount' + freshNum + '"></br>' + '<label>Ingredient Prep</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.prep' + freshNum + '"></br>' + '<label>Special Instructions</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.special' + freshNum + '">');
-        var $target = $('.freshTarget');
-
-        $list.append($label);
-        $list.append($formItem);
-        $target.append($list);
-        freshNum = freshNum + 1;
-      }
+      vm.addFresh = function(){
+        vm.newRecipe.freshIngredients.push({overview: ""});
+      };
 
       function addPanFresh() {
         var $list = $('<li></li>');
@@ -212,7 +188,7 @@
 
       vm.addRecipe = function() {
         var name = vm.newRecipe.name;
-        $http.post('https://healthrecipes.firebaseio.com/' + encodeURI(name) + '.json', vm.newRecipe).success(function(data) {
+        $http.post('https://healthrecipes.firebaseio.com/recipes.json', vm.newRecipe).success(function(data) {
           vm.recipeItem[data.name] = vm.newRecipe;
         }).error(function(err) {
           alert('Recipe could not be added.');
