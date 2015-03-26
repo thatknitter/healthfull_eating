@@ -136,8 +136,8 @@
       </div>
     </ul>
   </div>
-  <div class="pantry-dry" ng-click="recipe.addPanDry()">
-    <div class="panDry">
+  <div class="pantry-dry">
+    <div class="panDry" ng-click="recipe.addPanDry()">
       Add Pantry Dry Ingredient
     </div>
     <ul>
@@ -150,12 +150,15 @@
     </ul>
   </div>
   <div class="herbs-spices">
-    <a class="herbSpice">
+    <div class="herbSpice" ng-click="recipe.addHerb()">
       Add Herb or Spice Ingredient
-    </a>
+    </div>
     <ul>
-      <div class="herbTarget">
-
+      <div class="herbTarget" ng-repeat="herb in recipe.newRecipe.herbsSpices">
+        <li><label>Herbs and Spices {{$index+1}}:</label><input class="form-control" type="text" placeholder="name" ng-model="herb.name">
+          <br /><input class="form-control" type="text" placeholder="amount" ng-model="herb.amount">
+          <br /><input class="form-control" type="text" placeholder="prep" ng-model="herb.prep">
+          <br /><input class="form-control" type="text" placeholder="special instructions" ng-model="herb.special"></li>
       </div>
     </ul>
   </div>

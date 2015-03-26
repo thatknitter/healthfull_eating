@@ -87,6 +87,7 @@
       vm.newRecipe.freshIngredients = [];
       vm.newRecipe.pantryFreshIngredients = [];
       vm.newRecipe.pantryDryIngredients = [];
+      vm.newRecipe.herbSpices = [];
 
       $http.get('https://healthrecipes.firebaseio.com/').success(function(data) {
         vm.heathrecipes = data;
@@ -109,8 +110,8 @@
       // var $panDry = $('.panDry');
       // $panDry.click(addPanDry);
 
-      var $herbSpice = $('.herbSpice');
-      $herbSpice.click(addHerb);
+      // var $herbSpice = $('.herbSpice');
+      // $herbSpice.click(addHerb);
 
       var $direction = $('.direction');
       $direction.click(addDirection);
@@ -143,18 +144,9 @@
         vm.newRecipe.pantryDryIngredients.push({overview: ""});
       };
 
-      function addHerb() {
-        var $list = $('<li></li>');
-        var title = 'Herb &amp; Spices ' + herbNum;
-        var $label = $('<label>' + title + '</label>');
-        var $formItem = $('<input class="form-control" type="text" ng-model="recipe.newRecipe.herb' + herbNum + '"></br>' + '<label>Amount</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.herbAmount' + herbNum + '"></br>' + '<label>Ingredient Prep</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.herbPrep' + herbNum + '"></br>' + '<label>Special Instructions</label>' + '<input class="form-control" type="text" ng-model="recipe.newRecipe.herbSpecial' + herbNum + '">');
-        var $target = $('.herbTarget');
-
-        $list.append($label);
-        $list.append($formItem);
-        $target.append($list);
-        herbNum = herbNum + 1;
-      }
+      vm.addHerb = function(){
+        vm.newRecipe.herbSpices.push({overview: ""});
+      };
 
       function addDirection() {
         var $list = $('<li></li>');
