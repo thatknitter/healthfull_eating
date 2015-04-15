@@ -8,13 +8,13 @@
         templateUrl: 'views/home.html'
       })
       .when('/food_highlights', {
-        templateUrl: 'views/food_highlights/fh_main.html'
+        templateUrl: 'views/comingsoon.html'
       })
       .when('/cooking_school', {
-        templateUrl: 'views/cooking_school/cs_main.html'
+        templateUrl: 'views/comingsoon.html'
       })
       .when('/nutrition_science', {
-        templateUrl: 'views/nutrition_science/ns_main.html'
+        templateUrl: 'views/comingsoon.html'
       })
       .when('/recipes', {
         templateUrl: 'views/recipes/recipe_inputer.html',

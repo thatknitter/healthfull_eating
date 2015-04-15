@@ -42,7 +42,7 @@
 
 </div>
 <div class="serv-adj">
-  Recipe makes {{recipe.serve}} servings
+  Recipe makes {{list.serve}} servings
 
 </div>
 <div class="purple-line">
@@ -51,7 +51,7 @@
 <div class="quick-over">
   Quick Overview
   <ol ng-repeat="item in list.quickOverviewItems">
-    {{item.overview}}
+    <li>{{item.overview}}</li>
   </ol>
 
 </div>
@@ -172,7 +172,7 @@
     <em>Always read through the recipe before beginning. Prepare your mis en place.</em>
   </div>
   <ol ng-repeat="item in list.directions">
-    {{item.item}}
+    {{item.direction}}
   </ol>
 </div>
 <div class="purple-line"></div>
